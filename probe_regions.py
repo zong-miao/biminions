@@ -112,4 +112,4 @@ class probe_regions:
         combined_df = combined_df.loc[combined_df["overlapped"] == True]
         
         return combined_df.drop(["start", "end", "overlapped"], axis = 1).rename(
-            columns = {"new_start":"start","new_end":"end"}).reset_index(drop=True)
+            columns = {"new_start":"start","new_end":"end"}).reset_index(drop=True)   
